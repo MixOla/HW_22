@@ -1,8 +1,10 @@
 class Unit:
 
     # ...
-    def __init__(self):
-        pass
+    def __init__(self, x, y, state):
+        self.x = x
+        self.y = y
+        self.state = state
 
     def move(self, direction):
         speed = self._get_speed()
